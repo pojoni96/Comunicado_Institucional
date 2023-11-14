@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicado Institucional</title>
+    <link rel="icon" type="image/png" href="Imagenes/icono_fiuba.png"/>
+    <link rel="stylesheet" href="CSS/estilo_general.css">
+    <link rel="stylesheet" href="CSS/estilo_formulario.css">
+    <link rel="stylesheet" href="CSS/estilo_boton.css">
+    <link rel="stylesheet" href="CSS/estilo_contenido_oculto.css">
+    <link rel="stylesheet" href="CSS/estilo_comunicado.css">
+</head>
+
+<body>
+    <div class="contenedor_del_formulario" id="contenedor_del_formulario">
+        <form>
+            <h2>Edición de Comunicado Institucional</h2>
+            
+            <label for="campo_fecha">Ingrese el encabezado de la fecha:</label>
+            <input type="text" id="campo_fecha">
+
+            <label for="campo_texto_comunicado">Ingrese el texto del comunicado:</label>
+            <textarea name="texto_comunicado" id="campo_texto_comunicado"></textarea>
+
+            <div id="contenedor_opciones">
+                <div class="opcion_comunicado">
+                    <input type="radio" value="Descargar" id="Descargar" name="opcionComunicado">
+                    <label for="Descargar">Descargar Imagen</label>
+                </div>
+                
+                <div class="opcion_comunicado">
+                    <input type="radio" value="Copiar" id="Copiar" name="opcionComunicado">
+                    <label for="Copiar">Copiar Código HTML</label>
+                </div>
+            </div>
+
+            <div id="contenedor_boton_actualizacion">
+                <input type="button" value="Actualizar Comunicado" class="btn" id="boton_actualizar" onclick="actualizarPagina()">
+            </div>
+        </form>
+    </div>
+    
+    <div class="bloque_contenido_oculto" id="bloque_contenido_oculto">
+        <div class="seccion_del_comunicado" id="seccion_del_comunicado"></div>
+        
+        <div id="contenedor_botones_modificar-gestionar_comunicado">
+            <input type="button" value="Modificar Comunicado" class="btn" id="boton_modificar" onclick="irAlElemento('#contenedor_del_formulario')">
+
+            <input type="button" value="Gestionar Comunicado" class="btn" id="boton_desc/copiar" onclick="gestionarComunicado()">
+        </div>
+    </div>
+
+    <script src="JS/insertarComunicado.js"></script>
+    <script src="JS/copiarYDescargarComunicado.js"></script>
+    <script src="JS/actualizarComunicado.js"></script>
+    <script src="JS/html2canvas.min.js"></script>
+</body>
+</html>
