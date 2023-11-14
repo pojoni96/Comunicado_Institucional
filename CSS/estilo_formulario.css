@@ -1,0 +1,163 @@
+/* Configuraciones generales del contenedor */
+.contenedor_del_formulario{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    min-width: 200px;
+    max-width: 600px;
+}
+
+/* Estilo del formulario */
+.contenedor_del_formulario form{
+    width: 90%;
+    margin: 0 5%;
+    padding: 40px 20px;
+    border: 1px solid silver;
+    border-radius: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    box-shadow: inset 0 0 13px 1px silver;
+    transition: 0.5s;
+}
+
+.opcion_comunicado{
+    display: flex;
+    justify-content: center;
+}
+
+.opcion_comunicado input{
+    margin-left: 0;
+}
+
+/* Titulo */
+.contenedor_del_formulario form h2{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Etiquetas label con nombre de fecha y area de texto */
+.contenedor_del_formulario form label{
+    margin: 10px 0 5px;
+    display: block;
+    text-align: center;
+}
+
+/* Estilos compartidos de los campos */
+#campo_fecha, #campo_texto_comunicado{
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid silver;
+    box-shadow: 0 0 5px silver;
+}
+
+/* Campo de fecha */
+#campo_fecha{
+    width: 70%;
+    margin: 0 15%;
+    background-color: rgb(33, 42, 42);
+    text-align: center;
+}
+
+#campo_fecha:focus{
+    outline: none;
+}
+
+/* Campo de texto de area */
+#campo_texto_comunicado{
+    text-align: left;
+    width: 70%;
+    margin: 0 15%;
+    height: 100px;
+    resize: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    transition: 0.5s;
+    background-color: rgb(33, 42, 42);
+}
+
+#campo_texto_comunicado:focus{
+    outline: none;
+    width: 100%;
+    margin: 0;
+    height: 220px;
+}
+
+/* MEDIA QUERIES */
+
+@media(min-width: 601px){
+    .contenedor_del_formulario{
+        min-height: 444px;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 600px){
+    #campo_fecha, #campo_texto_comunicado{
+        margin: 0 10%;
+        width: 80%;
+    }
+    .contenedor_del_formulario{
+        min-height: 410px;
+    }
+    .contenedor_del_formulario form{
+        padding: 30px 15px;
+    }
+    #campo_texto_comunicado:focus{
+        height: 200px;
+        overflow: scroll;
+    }
+    .contenedor_del_formulario > *, #campo_texto_comunicado{font-size: 0.95rem;}
+    .contenedor_del_formulario form h2{font-size: 1.2rem;}
+}
+
+@media(max-width: 500px){
+    #campo_fecha, #campo_texto_comunicado{
+        margin: 0;
+        width: 100%;
+    }
+    #campo_texto_comunicado:focus{
+        height: 100px;
+        overflow: scroll;
+    }
+    .contenedor_del_formulario form h2{
+        padding: 0;
+    }
+}
+
+@media(min-width: 401px) and (max-width: 500px){
+    .contenedor_del_formulario{
+        min-height: 370px;
+    }
+    .contenedor_del_formulario form{
+        padding: 20px 15px;
+    }
+    .contenedor_del_formulario > *, #campo_texto_comunicado{font-size: 0.9rem;}
+    .contenedor_del_formulario form h2{font-size: 1rem;}
+}
+
+@media(max-width:400px){
+    .contenedor_del_formulario{
+        min-height: 405px;
+    }
+    .contenedor_del_formulario form{
+        padding: 20px 10px;
+    }
+    .contenedor_del_formulario > *, #campo_texto_comunicado{font-size: 0.8rem;}
+    .contenedor_del_formulario form h2{font-size: 0.8rem;}
+}
+
+@media(min-height: 491px) and (max-height: 600px){
+    #campo_texto_comunicado:focus{
+        height: 150px;
+    }
+}
+
+@media(max-height: 490px){
+    #campo_texto_comunicado:focus{
+        height: 100px;
+        overflow: scroll;
+    }
+}

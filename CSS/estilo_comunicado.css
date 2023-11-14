@@ -1,0 +1,86 @@
+/* Configuraciones generales del contenedor */
+.contenedor_del_comunciado{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 440px;
+    margin: 0 auto;
+}
+
+/* ENCABEZADO */
+
+header img{
+    display: block;
+    width: 100%;
+}
+
+header h2{
+    padding: 4px 20px; 
+    color: #19abff;
+    background-color: #e0e0e0;
+    font-size: 0.8em;
+}
+
+/* MAIN - CUERPO DEL MENSAJE */
+main{
+    padding: 20px;
+    background-color: #fffafa;
+}
+
+/* Titulo principal*/
+main h1{
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Mensaje */
+main section{
+    font-size: 1em;
+}
+
+main .mensaje h3{
+    margin-bottom: 20px;
+}
+
+main .saludo_de_despedida, main .saludo_de_despedida h3{
+    margin-top: 20px;
+}
+
+/* FOOTER - PIE DE PAGINA */
+
+footer{
+    padding: 4px 20px;
+    background-color: #636363;
+}
+
+footer .contenedor_dos_cols{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilos de un boton */
+.boton{
+    display: flex;
+    color: white;
+    margin-right: 4px;
+}
+
+.boton p{
+    font-size: 12px;
+    margin: auto 0;
+}
+
+.boton img{
+    display: block;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px silver solid;
+    margin-left: 2px;
+}
+
+@media(max-width:499px){
+    .seccion_del_comunicado{
+        width: 90%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+}

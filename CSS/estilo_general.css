@@ -1,0 +1,26 @@
+/* Scroll suave */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Reseteo de margenes */
+h1, h2, h3, p{
+    margin: 0;
+}
+
+/* Estilo del body */
+body{
+    margin: 0;
+    background-color: rgb(94,177,247);
+    background: linear-gradient(180deg, rgba(16,130,240,1) 0%, rgba(94,177,247,1) 100%);
+}
+
+/* Hipervinculos sin subrayado */
+a{
+    text-decoration: none;
+}
+
+/* Las cajas tendrán en cuenta los bordes */
+*{
+    box-sizing: border-box;
+}

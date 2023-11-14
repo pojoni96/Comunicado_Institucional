@@ -1,0 +1,30 @@
+.bloque_contenido_oculto{
+    display: none;
+}
+
+.mostrar_bloque_oculto{
+    min-height: 100vh;
+    max-width: 550px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contenedor_boton_confirmacion{
+    display: none;
+    padding: 8px;
+    margin: 0 auto 16px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background-color: rgb(146, 219, 179);
+    color: rgb(0, 99, 0);
+    cursor: pointer;
+}
+
+.nuevos_colores_del_body{
+    background: rgb(16,130,240);
+    background: linear-gradient(180deg, rgba(16,130,240,1) 0%, rgba(94,177,247,1) 50%, rgba(185,233,255,1) 100%);
+}
