@@ -22,6 +22,7 @@
     background-color: rgb(146, 219, 179);
     color: rgb(0, 99, 0);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .nuevos_colores_del_body{
