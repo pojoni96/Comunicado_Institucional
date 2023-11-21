@@ -31,8 +31,16 @@ function descargarComunicado(){
 function gestionarComunicado(){
     let opcion = conseguirOpcionComunicado();
 
-    if(opcion == "Descargar")
+    if(opcion == "Descargar"){
         descargarComunicado();
-    else
+        document.querySelector("#boton_confirmacion p").innerHTML = "¡Imagen Descargada Correctamente!";
+    }
+    
+    else{
         copiarComunicado();
+        document.querySelector("#boton_confirmacion p").innerHTML = "¡Código HTML Copiado Correctamente!";
+    }
+
+    document.getElementById("boton_confirmacion").style.visibility = "visible";
+    irAlElemento("#boton_confirmacion");
 }

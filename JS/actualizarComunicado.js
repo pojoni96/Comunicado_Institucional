@@ -50,7 +50,6 @@ function actualizarComunicado(){
     let opcion_comunicado = conseguirOpcionComunicado();
 
     if(campo_fecha.length !=0 && campo_texto_comunicado !=0 && opcion_comunicado){
-        console.log(opcion_comunicado);
         insertarComunicado(opcion_comunicado);
         actualizarNombreBoton(opcion_comunicado);
         quitarMargenSuperior(opcion_comunicado);
@@ -93,4 +92,9 @@ function actualizarPagina(){
         mostrarContenidoOculto();
         irAlElemento("#cuerpo_del_comunicado");
     }
+}
+
+function modificarComunicado(){
+    document.getElementById("boton_confirmacion").style.visibility = "hidden";
+    irAlElemento('#contenedor_del_formulario');
 }
