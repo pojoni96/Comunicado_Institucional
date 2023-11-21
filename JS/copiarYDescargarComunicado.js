@@ -33,13 +33,14 @@ function gestionarComunicado(){
 
     if(opcion == "Descargar"){
         descargarComunicado();
-        document.querySelector("#contenedor_boton_confirmacion p").innerHTML = "Imagen Copiada Correctamente!";
+        document.querySelector("#boton_confirmacion p").innerHTML = "¡Imagen Descargada Correctamente!";
     }
     
     else{
         copiarComunicado();
-        document.querySelector("#contenedor_boton_confirmacion p").innerHTML = "¡Código HTML Copiado Correctamente!";
+        document.querySelector("#boton_confirmacion p").innerHTML = "¡Código HTML Copiado Correctamente!";
     }
 
-    document.getElementById("contenedor_boton_confirmacion").style.display = "block";
+    document.getElementById("boton_confirmacion").style.visibility = "visible";
+    irAlElemento("#boton_confirmacion");
 }

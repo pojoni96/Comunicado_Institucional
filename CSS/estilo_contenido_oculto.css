@@ -11,8 +11,8 @@
     justify-content: center;
 }
 
-#contenedor_boton_confirmacion{
-    display: none;
+#boton_confirmacion{
+    visibility: hidden;
     padding: 8px;
     margin: 0 auto 16px;
     border: 1px solid silver;
@@ -22,12 +22,10 @@
     font-size: 0.9em;
     background-color: rgb(146, 219, 179);
     color: rgb(0, 99, 0);
-    cursor: pointer;
-    transition: 0.5s;
 }
 
 @media(max-width:300px){
-    #contenedor_boton_confirmacion{
+    #boton_confirmacion{
         width: 90%;
     }
 }

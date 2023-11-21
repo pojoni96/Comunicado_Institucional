@@ -93,3 +93,8 @@ function actualizarPagina(){
         irAlElemento("#cuerpo_del_comunicado");
     }
 }
+
+function modificarComunicado(){
+    document.getElementById("boton_confirmacion").style.visibility = "hidden";
+    irAlElemento('#contenedor_del_formulario');
+}
