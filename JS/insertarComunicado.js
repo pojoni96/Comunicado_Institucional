@@ -79,12 +79,12 @@ function insertarComunicadoMail(){
                 <!-- Cuerpo del mensaje -->
                 <tr>
                     <td style="padding: 0 20px 20px;background-color: #fffafa; width: 100%;">
-                        <div class="mensaje" style="font-size: 1.2em;">
+                        <div class="mensaje" style="font-size: 1.1em;">
                             <h3 style="margin: 0 0 20px;">Estimados usuarios:</h3>
                             <p id="campo_texto_a_modificar" style="margin: 0;">[Texto del comunicado]</p>
                         </div>
 
-                        <div style="font-size: 1.2em;margin-top: 20px;">
+                        <div style="font-size: 1.1em;margin-top: 20px;">
                             <p style="margin: 0;">Cordialmente,</p>
                             <p style="margin: 0;">Subsecretaría de TICs.</p>
                             <h3 style="margin: 20px 0 0;">No debe contestar este correo.</h3>
